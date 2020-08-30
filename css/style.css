@@ -30,3 +30,11 @@ img:hover {
   box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
   opacity: 0.5;
 }
+@media only screen and (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+  }
+}
